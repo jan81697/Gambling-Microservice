@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    color: #4CAF50;
+    font-size: 2em;
+  }
+  
+  .page {
+    display: none;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  #main-menu-tokens, #gambling-page-tokens {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.2em;
+  }
+  
+  button {
+    padding: 12px 20px;
+    font-size: 1em;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    min-width: 120px;
+  }
+  
+  button:hover {
+    background-color: #e0e0e0;
+    color: #333;
+  }
+  
+  button:focus {
+    outline: 3px solid #4CAF50;
+  }
+  
+  .start-game-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+  
+  .quit-btn {
+    background-color: #f44336; /* Red */
+    color: white;
+  }
+  
+  .play-again-btn, .back-btn {
+    background-color: #2196F3; /* Blue */
+    color: white;
+  }
+  
+  .place-bet-btn {
+    background-color: #FFC107; /* Amber */
+    color: white;
+  }
+  
+  input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    width: 80%;
+  }
+  
+  input[type="number"]:focus {
+    outline: 2px solid #4CAF50;
+  }
+  
+  button[title]::after {
+    content: attr(title);
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 3px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s;
+    white-space: nowrap;
+  }
+  
+  button:hover[title]::after {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  #result-message {
+    font-size: 18px;
+    margin: 20px 0;
+    font-weight: bold;
+  }
+  
+  .error-message {
+    color: #D32F2F;
+    font-size: 1em;
+    padding: 10px;
+    border: 1px solid #D32F2F;
+    border-radius: 6px;
+    background-color: #FFEBEE;
+    margin-top: 15px;
+  }
+  
+.coin-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
